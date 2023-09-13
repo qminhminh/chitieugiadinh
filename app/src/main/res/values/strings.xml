@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Do_an_nhom_chitieugiadinh</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="m_t_kh_u">Mật khẩu?</string>
+    <string name="qu_n_m_t_kh_u">Quên mật khẩu?</string>
+    <string name="v_n_ch_a_c_ng_k_ng_k">Vẫn chưa được đăng ký? Đăng ký</string>
+    <string name="ng_k">Đăng ký</string>
+    <string name="l_ng_i_d_ng_ng_nh_p">Đã là người dùng? Đăng nhập</string>
+    <string name="d_ng_h_b_n_vd_ngo_i">Dòng họ bên (VD: Ngoại...)</string>
+    <string name="gi_i_t_nh_vd_nam">Giới tính (VD: Nam...)</string>
+    <string name="h_v_t_n">Họ và tên</string>
+    <string name="h_t_n_ho_c_t_n_th_ng_g_i">Họ tên hoặc tên thường gọi..</string>
+    <string name="th_m_nh_i_di_n">Thêm ảnh đại diện</string>
+    <string name="do_you_have_a_register_register">Do you have a register? Register</string>
+    <string name="forget_your_password">Forget Your Password?</string>
+    <string name="signin">SignIn</string>
+    <string name="signup">SignUp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ng_xu_t">Đăng xuất</string>
+    <string name="tu_i_vd_18">Tuổi (VD:18..)</string>
+    <string name="th_m_v_o_tin">Thêm vào tin</string>
+    <string name="ng_y_th_ng_n_m_sinh">Ngày/Tháng/Năm sinh</string>
+</resources>

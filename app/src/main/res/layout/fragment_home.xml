@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Notebook"
+                android:textColor="#FF9800"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/id_add_tin"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/_250sdp"
+                android:layout_marginTop="@dimen/_13ssp"
+                android:src="@drawable/round_add_24" />
+
+            <ImageView
+                android:id="@+id/iv_chat"
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="@dimen/_267sdp"
+                android:layout_marginTop="@dimen/_14ssp"
+                android:background="@color/backgroud_img"
+                android:src="@drawable/download" />
+
+            <ImageView
+                android:id="@+id/iv_notice"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/_13ssp"
+                android:layout_toRightOf="@id/iv_chat"
+                android:src="@drawable/baseline_notifications_none_24" />
+
+            <TextView
+                android:id="@+id/count_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_notice"
+                android:text="s"
+                android:textColor="#EC0909"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+            <!--
+               <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/logo"
+                android:background="#C6C6C6" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/id_add_tin"
+                android:layout_marginTop="@dimen/_19sdp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />-->
+            <!--     android:layout_below="@id/recyviewStory"       -->
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/view2"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="#C6C6C6" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/addstory"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/black"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imgandvideo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/checkinternet" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/imgProfile"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-60dp"
+                                android:background="@drawable/backgroud_imge"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/baseline_add_24"
+                                app:riv_oval="true" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyviewStory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/view2"
+                        android:layout_below="@id/view1"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+
+                        android:layout_toRightOf="@id/addstory"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/logo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="220dp"
+                android:layout_marginEnd="0dp"
+                android:background="#C6C6C6" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/id_add_tin"
+                android:layout_marginTop="@dimen/_210sdp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

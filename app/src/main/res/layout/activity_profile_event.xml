@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".profilevent.ProfileEventActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_20sdp"
+        android:text="Chi tiết sự kiện" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/_26sdp"
+       android:layout_marginRight="@dimen/_16sdp"
+       android:layout_height="wrap_content">
+       <TextView
+           android:text="Ngày đi:"
+           android:textSize="@dimen/_13sdp"
+           android:textColor="@color/black"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/tv_ngaydi"
+           android:text="Ngày đi:"
+           android:textSize="@dimen/_13sdp"
+           android:textColor="@color/black"
+           android:layout_marginLeft="@dimen/_16sdp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_26sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Giờ đi:"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_giodi"
+            android:text="Ngày đi:"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_26sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Nội dung :"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_nd"
+            android:text="Ngày đi:"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_26sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Ghi chú:"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_ghichu"
+            android:text="Ngày đi:"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_marginTop="@dimen/_20sdp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:paddingLeft="@dimen/_20sdp"
+
+           android:textSize="@dimen/_20sdp"
+           android:text="Người tham gia sự kiện :(" />
+       <TextView
+           android:id="@+id/coutUserEvent"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="@dimen/_20sdp"
+           android:text="10"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="@dimen/_20sdp"
+           android:text=")"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyview_profileevnt"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="horizontal"
+        app:spanCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

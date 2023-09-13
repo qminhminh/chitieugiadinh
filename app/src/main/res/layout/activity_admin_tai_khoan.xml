@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminTaiKhoanActivity">
+    <ImageView
+        android:id="@+id/img_logout_admin"
+        android:src="@drawable/icon_logout_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycy_admin_user"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_below="@id/img_logout_admin"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".taikhoancanhan.KhoangKhacActivity">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:id="@+id/iv_img_moment"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_image_24"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:tint="#4CAF50" />
+    <Button
+        android:id="@+id/button_moment"
+        android:text="Chọn tệp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:textColor="#FBFAFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_save_moment"
+        android:text="Lưu khoảng khắc"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:textColor="#FBFAFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
