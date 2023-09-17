@@ -6,10 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
 import com.example.chi_tieu_giadinh.MainActivity;
-import com.example.chi_tieu_giadinh.checkwifi.CheckWifiActivity;
-
 import java.util.List;
 
 public class NetworkChangeReceiver extends BroadcastReceiver {

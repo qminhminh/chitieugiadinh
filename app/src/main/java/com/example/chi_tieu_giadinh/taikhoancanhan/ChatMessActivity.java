@@ -7,8 +7,6 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
-
-import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.adapter.ChatAdapter;
 import com.example.chi_tieu_giadinh.databinding.ActivityChatMessBinding;
 import com.example.chi_tieu_giadinh.model.ChatMessageModel;
@@ -22,13 +20,11 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 

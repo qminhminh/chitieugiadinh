@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,11 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.example.chi_tieu_giadinh.adapter.AdminFamilyAdapter;
-import com.example.chi_tieu_giadinh.adapter.FamilyAdapter;
 import com.example.chi_tieu_giadinh.model.AdminFamilyModel;
-import com.example.chi_tieu_giadinh.model.FamilyModel;
 import com.example.chi_tieu_giadinh.taikhoancanhan.SignInActivity;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
@@ -26,16 +22,12 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.SignInMethodQueryResult;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-
 import java.util.ArrayList;
-import java.util.HashMap;
+
 
 public class AdminTaiKhoanActivity extends AppCompatActivity implements AdminFamilyAdapter.Listeners {
 

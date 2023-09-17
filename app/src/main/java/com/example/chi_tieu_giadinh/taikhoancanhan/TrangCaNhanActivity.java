@@ -3,7 +3,6 @@ package com.example.chi_tieu_giadinh.taikhoancanhan;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -13,7 +12,6 @@ import android.provider.MediaStore;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Toast;
-
 import com.example.chi_tieu_giadinh.adapter.TrangCaNhanAdapter;
 import com.example.chi_tieu_giadinh.adapter.TrangCaNhanDangTinAdapter;
 import com.example.chi_tieu_giadinh.databinding.ActivityTrangCaNhanBinding;
@@ -24,11 +22,8 @@ import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
-
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;

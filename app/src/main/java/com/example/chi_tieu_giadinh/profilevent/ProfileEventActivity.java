@@ -1,24 +1,15 @@
 package com.example.chi_tieu_giadinh.profilevent;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
-
-import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.adapter.ThamGiaProfileAdapter;
 import com.example.chi_tieu_giadinh.databinding.ActivityProfileEventBinding;
-import com.example.chi_tieu_giadinh.model.CreateEventModel;
 import com.example.chi_tieu_giadinh.model.ThamGiaProfile;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
-import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
-
 import java.util.ArrayList;
 
 public class ProfileEventActivity extends AppCompatActivity {

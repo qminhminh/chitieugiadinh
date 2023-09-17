@@ -1,5 +1,4 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,24 +12,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.VideoView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.model.CheckTinModel;
-import com.example.chi_tieu_giadinh.model.DangTinModel;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.makeramen.roundedimageview.RoundedImageView;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -71,22 +65,7 @@ public class CheckTinDangAdapter extends RecyclerView.Adapter<CheckTinDangAdapte
 
         holder.name.setText(model.getName());
         holder.mota.setText(model.getEdit());
-        // xủa lý vidoe và ảnh
-//        if (model.getVideo() != null && !model.getVideo().isEmpty()) {
-//            holder.video.setVideoURI(Uri.parse(model.getVideo()));
-//            holder.video.start();
-//            holder.img_dang_tin.setVisibility(View.GONE);
-//            holder.video.setVisibility(View.VISIBLE);
-//        } else {
-//            if(model.getImgDaidien()==null){
-//                holder.img_dang_tin.setVisibility(View.GONE);
-//            }else {
-//                holder.img_dang_tin.setImageBitmap(getUserImage(model.getImgDangTin()));
-//                holder.img_dang_tin.setVisibility(View.VISIBLE);
-//                holder.video.setVisibility(View.GONE);
-//            }
-//
-//        }
+
         if (model.getImgDaidien() != null)
         {
         Glide.with(context).load(arrayList.get(position).getImgDangTin()).into(holder.img_dang_tin);
@@ -98,7 +77,6 @@ public class CheckTinDangAdapter extends RecyclerView.Adapter<CheckTinDangAdapte
         holder.like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 holder.icon_like.setColorFilter(Color.BLUE);
                 // holder.like.setTextColor(ContextCompat.getColor(context, R.color.purple_200));
             }

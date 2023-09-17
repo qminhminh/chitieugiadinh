@@ -1,11 +1,9 @@
 package com.example.chi_tieu_giadinh.checkwifi;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
 import com.example.chi_tieu_giadinh.MainActivity;
 import com.example.chi_tieu_giadinh.R;
 

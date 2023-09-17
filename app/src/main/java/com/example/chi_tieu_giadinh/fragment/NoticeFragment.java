@@ -2,31 +2,19 @@ package com.example.chi_tieu_giadinh.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.adapter.EventAdapter;
-import com.example.chi_tieu_giadinh.adapter.NoticeAdapter;
 import com.example.chi_tieu_giadinh.model.CreateEventModel;
-import com.example.chi_tieu_giadinh.model.DangTinModel;
 import com.example.chi_tieu_giadinh.model.NoticeModel;
-import com.example.chi_tieu_giadinh.profilevent.ChitietEvntFragment;
-import com.example.chi_tieu_giadinh.profilevent.NguoiThamgiaFragment;
 import com.example.chi_tieu_giadinh.profilevent.ProfileEventActivity;
-import com.example.chi_tieu_giadinh.taikhoancanhan.CommentActivity;
-import com.example.chi_tieu_giadinh.taikhoancanhan.CreteEventActivity;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -37,11 +25,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 
 

@@ -2,26 +2,17 @@ package com.example.chi_tieu_giadinh.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.adapter.FamilyAdapter;
 import com.example.chi_tieu_giadinh.model.FamilyModel;
@@ -29,12 +20,10 @@ import com.example.chi_tieu_giadinh.taikhoancanhan.MapActivity;
 import com.example.chi_tieu_giadinh.taikhoancanhan.MomentFamilyActivity;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-
 import java.util.ArrayList;
 
 

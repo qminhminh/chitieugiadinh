@@ -2,20 +2,16 @@ package com.example.chi_tieu_giadinh.taikhoancanhan;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.adapter.TrangCaNhanAdapter;
 import com.example.chi_tieu_giadinh.adapter.TrangCaNhanDangTinAdapter;
-import com.example.chi_tieu_giadinh.databinding.ActivityProfileBinding;
 import com.example.chi_tieu_giadinh.interfaccee.UserListeners;
 import com.example.chi_tieu_giadinh.model.DangTinModel;
 import com.example.chi_tieu_giadinh.model.UserModel;
@@ -26,7 +22,6 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.makeramen.roundedimageview.RoundedImageView;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;

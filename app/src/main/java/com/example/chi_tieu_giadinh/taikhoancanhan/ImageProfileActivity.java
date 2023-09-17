@@ -1,17 +1,12 @@
 package com.example.chi_tieu_giadinh.taikhoancanhan;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Matrix;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
-import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.databinding.ActivityImageProfileBinding;
 import com.example.chi_tieu_giadinh.khoangkhac.KhoangKhacImageActivity;
 

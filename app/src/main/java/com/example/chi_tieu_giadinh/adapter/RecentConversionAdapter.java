@@ -1,21 +1,15 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.chi_tieu_giadinh.databinding.ItemContainerSendMessageBinding;
 import com.example.chi_tieu_giadinh.databinding.ItemContanerConversionBinding;
 import com.example.chi_tieu_giadinh.interfaccee.ConversionListener;
 import com.example.chi_tieu_giadinh.model.ChatMessageModel;
 import com.example.chi_tieu_giadinh.model.UserModel;
-
 import java.util.ArrayList;
 
 public class RecentConversionAdapter extends RecyclerView.Adapter<RecentConversionAdapter.ConversionViewHolder> {

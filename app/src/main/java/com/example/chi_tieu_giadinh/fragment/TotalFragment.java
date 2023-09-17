@@ -1,16 +1,13 @@
 package com.example.chi_tieu_giadinh.fragment;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.chitieu.ChitieuViewpagerAdapter;
 import com.google.android.material.tabs.TabLayout;

@@ -2,14 +2,11 @@ package com.example.chi_tieu_giadinh.taikhoancanhan;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import com.example.chi_tieu_giadinh.AdminActivity;
 import com.example.chi_tieu_giadinh.MainActivity;
-import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.databinding.ActivityMoDauBinding;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;

@@ -1,14 +1,11 @@
 package com.example.chi_tieu_giadinh.profilevent;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.adapter.ThamGiaProfileAdapter;
 import com.example.chi_tieu_giadinh.model.CreateEventModel;
@@ -18,7 +15,6 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
-
 import java.util.ArrayList;
 
 

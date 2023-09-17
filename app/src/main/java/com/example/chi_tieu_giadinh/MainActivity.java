@@ -1,23 +1,18 @@
 package com.example.chi_tieu_giadinh;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
-
 import com.example.chi_tieu_giadinh.checkwifi.NetworkChangeReceiver;
 import com.example.chi_tieu_giadinh.fragment.ViewPaperAdapter;
 import com.example.chi_tieu_giadinh.khoangkhac.KhoangKhacImageActivity;
@@ -25,7 +20,6 @@ import com.example.chi_tieu_giadinh.taikhoancanhan.AddDangTinActivity;
 import com.example.chi_tieu_giadinh.taikhoancanhan.CreateNoticeActivity;
 import com.example.chi_tieu_giadinh.taikhoancanhan.CreteEventActivity;
 import com.example.chi_tieu_giadinh.taikhoancanhan.MapActivity;
-import com.example.chi_tieu_giadinh.taikhoancanhan.MomentFamilyActivity;
 import com.example.chi_tieu_giadinh.taikhoancanhan.TrangCaNhanActivity;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;

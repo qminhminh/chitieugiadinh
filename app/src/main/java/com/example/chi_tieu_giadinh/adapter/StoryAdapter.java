@@ -1,5 +1,4 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -10,21 +9,15 @@ import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.chi_tieu_giadinh.R;
-import com.example.chi_tieu_giadinh.model.DangTinModel;
 import com.example.chi_tieu_giadinh.model.ModelStrory;
 import com.example.chi_tieu_giadinh.taikhoancanhan.VideoActivity;
 import com.makeramen.roundedimageview.RoundedImageView;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.StroryViewHolder> {

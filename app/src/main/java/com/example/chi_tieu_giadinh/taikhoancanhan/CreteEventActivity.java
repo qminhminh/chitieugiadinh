@@ -1,29 +1,18 @@
 package com.example.chi_tieu_giadinh.taikhoancanhan;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.chi_tieu_giadinh.MainActivity;
-import com.example.chi_tieu_giadinh.adapter.EventAdapter;
 import com.example.chi_tieu_giadinh.cloudmessing.FcmNotificationsSender;
-import com.example.chi_tieu_giadinh.model.CreateEventModel;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
-
-import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.databinding.ActivityCreteEventBinding;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.messaging.FirebaseMessaging;
-
 import java.util.HashMap;
 
 public class CreteEventActivity extends AppCompatActivity {

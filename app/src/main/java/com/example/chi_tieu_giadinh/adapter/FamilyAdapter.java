@@ -1,5 +1,4 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -7,14 +6,11 @@ import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.chi_tieu_giadinh.databinding.ItemFamilyBinding;
 import com.example.chi_tieu_giadinh.model.FamilyModel;
 import com.example.chi_tieu_giadinh.taikhoancanhan.ProfileActivity;
-
 import java.util.ArrayList;
 
 public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.FamilyViewHolder> {

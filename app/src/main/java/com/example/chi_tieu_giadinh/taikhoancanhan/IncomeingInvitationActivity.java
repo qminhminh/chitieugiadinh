@@ -2,21 +2,17 @@ package com.example.chi_tieu_giadinh.taikhoancanhan;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.databinding.ActivityIncomeingInvitationBinding;
 import com.example.chi_tieu_giadinh.network.ApiCilent;
 import com.example.chi_tieu_giadinh.network.ApiService;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

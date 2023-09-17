@@ -1,7 +1,6 @@
 package com.example.chi_tieu_giadinh.adapter;
 
 import android.content.Context;
-import android.graphics.PorterDuff;
 import android.media.MediaPlayer;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,15 +9,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.VideoView;
-
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.model.ModelStrory;
-
-
 import java.util.List;
 
 public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHolder>{

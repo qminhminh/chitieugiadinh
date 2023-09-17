@@ -1,40 +1,24 @@
 package com.example.chi_tieu_giadinh.adapter;
-
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.net.Uri;
 import android.util.Base64;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.model.DangTinModel;
-import com.example.chi_tieu_giadinh.utiliti.Constraints;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.FirebaseFirestore;
 import com.makeramen.roundedimageview.RoundedImageView;
-
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Locale;
+
 
 public class TrangCaNhanDangTinAdapter extends RecyclerView.Adapter<TrangCaNhanDangTinAdapter.TrangCaNhanDangTin> {
     ArrayList<DangTinModel> arrayList = new ArrayList<>();

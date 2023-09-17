@@ -1,5 +1,4 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
@@ -7,14 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.model.ThamGiaProfile;
 import com.makeramen.roundedimageview.RoundedImageView;
-
 import java.util.ArrayList;
 
 public class ThamGiaProfileAdapter extends RecyclerView.Adapter<ThamGiaProfileAdapter.ThamGiaViewHolder> {

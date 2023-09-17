@@ -1,13 +1,10 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,38 +12,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.VideoView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.model.DangTinModel;
-import com.example.chi_tieu_giadinh.model.UserModel;
-import com.example.chi_tieu_giadinh.taikhoancanhan.CommentActivity;
-import com.example.chi_tieu_giadinh.taikhoancanhan.ProfileActivity;
-import com.example.chi_tieu_giadinh.taikhoancanhan.TrangCaNhanActivity;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
-import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 import com.makeramen.roundedimageview.RoundedImageView;
-
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Locale;
+
 
 public class DangTinAdapter extends RecyclerView.Adapter<DangTinAdapter.DangViewHolder> {
     ArrayList<DangTinModel> arrayList=new ArrayList<>();

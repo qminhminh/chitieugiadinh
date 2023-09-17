@@ -1,7 +1,5 @@
 package com.example.chi_tieu_giadinh.khoangkhac;
 
-
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,18 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.taikhoancanhan.ImageProfileActivity;
 import com.makeramen.roundedimageview.RoundedImageView;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;

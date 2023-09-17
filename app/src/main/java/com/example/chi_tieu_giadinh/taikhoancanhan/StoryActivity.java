@@ -6,10 +6,8 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.chi_tieu_giadinh.MainActivity;
 import com.example.chi_tieu_giadinh.databinding.ActivityStoryBinding;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
@@ -19,7 +17,6 @@ import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-
 import java.util.HashMap;
 import java.util.Map;
 

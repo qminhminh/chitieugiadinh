@@ -2,18 +2,14 @@ package com.example.chi_tieu_giadinh.taikhoancanhan;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
-
 import android.os.Bundle;
-
 import com.example.chi_tieu_giadinh.R;
-import com.example.chi_tieu_giadinh.adapter.StoryAdapter;
 import com.example.chi_tieu_giadinh.adapter.VideoAdapter;
 import com.example.chi_tieu_giadinh.model.ModelStrory;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
-
 import java.util.ArrayList;
 import java.util.List;
 

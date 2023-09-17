@@ -1,5 +1,4 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,19 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.model.CommentModel;
-import com.example.chi_tieu_giadinh.model.DangTinModel;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.makeramen.roundedimageview.RoundedImageView;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;

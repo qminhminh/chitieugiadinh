@@ -1,17 +1,12 @@
 package com.example.chi_tieu_giadinh.adapter;
-
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.chi_tieu_giadinh.databinding.ItemContainerReviedMessageBinding;
 import com.example.chi_tieu_giadinh.databinding.ItemContainerSendMessageBinding;
 import com.example.chi_tieu_giadinh.model.ChatMessageModel;
-
 import java.util.ArrayList;
 
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

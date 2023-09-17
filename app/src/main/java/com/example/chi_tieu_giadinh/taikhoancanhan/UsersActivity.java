@@ -1,30 +1,22 @@
 package com.example.chi_tieu_giadinh.taikhoancanhan;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
-import com.example.chi_tieu_giadinh.R;
 import com.example.chi_tieu_giadinh.adapter.UserAdapter;
 import com.example.chi_tieu_giadinh.cloudmessing.FcmNotificationsSender;
-import com.example.chi_tieu_giadinh.cloudmessing.FirebaseMessagingService;
 import com.example.chi_tieu_giadinh.databinding.ActivityUsersBinding;
 import com.example.chi_tieu_giadinh.interfaccee.UserListeners;
 import com.example.chi_tieu_giadinh.model.UserModel;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.iid.FirebaseInstanceIdReceiver;
 import com.google.firebase.messaging.FirebaseMessaging;
-
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class UsersActivity extends AppCompatActivity implements UserListeners {
     private ActivityUsersBinding binding;
