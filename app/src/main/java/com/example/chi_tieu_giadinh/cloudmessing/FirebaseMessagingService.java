@@ -17,8 +17,11 @@ import android.util.Base64;
 import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 import com.example.chi_tieu_giadinh.MainActivity;
 import com.example.chi_tieu_giadinh.R;
+import com.example.chi_tieu_giadinh.taikhoancanhan.IncomeingInvitationActivity;
 import com.example.chi_tieu_giadinh.utiliti.Constraints;
 import com.example.chi_tieu_giadinh.utiliti.Preferencemanager;
 import com.google.firebase.messaging.RemoteMessage;
@@ -40,23 +43,23 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
         preferencemanager=new Preferencemanager(getApplicationContext());
         //String type=remoteMessage.getData().get(Constraints.REMOTE_MSG_TYPE);
          String type=preferencemanager.getString(Constraints.REMOTE_MSG_TYPE);
-//       if (type==Constraints.REMOTE_MSG_INVITATION) {
-//        String token=preferencemanager.getString(Constraints.KEY_FCM_TOKEN);
-//
-//            Intent intent = new Intent(getApplicationContext(), IncomeingInvitationActivity.class);
-//            intent.putExtra(Constraints.REMOTE_MSG_MEETING_TYPE, preferencemanager.getString(Constraints.REMOTE_MSG_MEETING_TYPE));
-//            intent.putExtra(Constraints.KEY_NAME, preferencemanager.getString(Constraints.KEY_NAME));
-//            intent.putExtra(Constraints.KEY_EMAIL, preferencemanager.getString(Constraints.KEY_EMAIL));
-//            intent.putExtra(Constraints.REMOTE_MSG_INVITOR_TOKEN,remoteMessage.getData().get(Constraints.REMOTE_MSG_INVITOR_TOKEN));
-//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Add thisline to set the flag
-//            getApplicationContext().startActivity(intent);
-//
-//
-//          }else if (type==Constraints.REMOTE_MSG_INVITATION_REPONSE){
-//            Intent intentt=new Intent(Constraints.REMOTE_MSG_INVITATION_REPONSE);
-//            intentt.putExtra(Constraints.REMOTE_MSG_INVITATION_REPONSE,preferencemanager.getString(Constraints.REMOTE_MSG_INVITATION_REPONSE));
-//            LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intentt);
-//       }
+       if (type==Constraints.REMOTE_MSG_INVITATION) {
+        String token=preferencemanager.getString(Constraints.KEY_FCM_TOKEN);
+
+            Intent intent = new Intent(getApplicationContext(), IncomeingInvitationActivity.class);
+            intent.putExtra(Constraints.REMOTE_MSG_MEETING_TYPE, preferencemanager.getString(Constraints.REMOTE_MSG_MEETING_TYPE));
+            intent.putExtra(Constraints.KEY_NAME, preferencemanager.getString(Constraints.KEY_NAME));
+            intent.putExtra(Constraints.KEY_EMAIL, preferencemanager.getString(Constraints.KEY_EMAIL));
+            intent.putExtra(Constraints.REMOTE_MSG_INVITOR_TOKEN,remoteMessage.getData().get(Constraints.REMOTE_MSG_INVITOR_TOKEN));
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Add thisline to set the flag
+            getApplicationContext().startActivity(intent);
+
+
+          }else if (type==Constraints.REMOTE_MSG_INVITATION_REPONSE){
+            Intent intentt=new Intent(Constraints.REMOTE_MSG_INVITATION_REPONSE);
+            intentt.putExtra(Constraints.REMOTE_MSG_INVITATION_REPONSE,preferencemanager.getString(Constraints.REMOTE_MSG_INVITATION_REPONSE));
+            LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intentt);
+       }
 
 
 
